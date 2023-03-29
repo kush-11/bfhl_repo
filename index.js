@@ -31,17 +31,17 @@ app.post('/bfhl', (req, res) => {
     }
   }
 
-  fullname: 'Kush Suneja';
-  rollno: 2010991604;
-  dob: 24112002;
-  email_id: 'kush1604.be20@chitkara.edu.in';
+  fullname= 'Kush Suneja';
+  rollno= 2010991604;
+  dob= 24112002;
+  email_id= 'kush1604.be20@chitkara.edu.in';
 
   if (data) {
     return res.status(200).json({
       is_success: true,
       user_id: fullname + '_' + dob,
       email: email_id,
-      roll_number: 'rollno',
+      roll_number: rollno,
       odd_numbers: odd_numbers,
       even_numbers: even_numbers,
       alphabets: alphabets,
